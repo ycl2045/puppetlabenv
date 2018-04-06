@@ -1,0 +1,17 @@
+{
+  "LICENSE": "a300b604c66de62cf6e923cca89c9d83",
+  "Modulefile": "e27a4a79161d770c672ee2107d02a3de",
+  "README.md": "db889dfb81caa112e7e25513109a225a",
+  "Rakefile": "6d4090a02df43cfba01d4b2b2009a66e",
+  "manifests/dependencies.pp": "9277d8f4be723082f76f0eb86f8ecace",
+  "manifests/init.pp": "1172f86c29be82857df52eb11215c708",
+  "manifests/install.pp": "66dbb9120697d7c88fbb3d1589940771",
+  "manifests/params.pp": "d41e9cecf4d1226697dc2fa23a472846",
+  "manifests/skel.pp": "197f2d14ce1aed44269666c2e0b06a3d",
+  "manifests/spec.pp": "f30c0be9fca4d3a8bae17b761c52c376",
+  "manifests/user.pp": "0bd3a3a9be08c9f7cae770319108e62c",
+  "metadata.json": "e379376d0859a1eaf02c9b5c81be9eca",
+  "spec/classes/activemq_spec.rb": "ebdd687a809245144cd1d2677e170351",
+  "spec/spec_helper.rb": "2598e0d4faa8b1c4ddb20f352e54811e",
+  "templates/spec.erb": "055d4f22a02a677753cf922108b6e50c"
+}

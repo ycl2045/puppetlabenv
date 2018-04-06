@@ -1,0 +1,56 @@
+class { 'rabbitmq':
+  environment_variables => {
+    'NODENAME'    => 'node01@puppet',
+    'SERVICENAME' => 'RabbitMQ'
+     }
+}
+
+
+rabbitmq_vhost { '/mcollective':
+  ensure => present,
+}
+
+
+rabbitmq_user { 'mcollective':
+  password => 'yunjikeji',
+}
+
+
+rabbitmq_user { 'admin':
+  password => 'yunjikeji',
+  tags	=> 'administrator'
+}
+
+rabbitmq_user_permissions { 'mcollective@/mcollective':
+  configure_permission => '.*',
+  read_permission      => '.*',
+  write_permission     => '.*',
+}
+
+rabbitmq_user_permissions { 'admin@/mcollective':
+  configure_permission => '.*',
+  read_permission      => '.*',
+  write_permission     => '.*',
+}
+
+
+rabbitmq_exchange { 'mbroadcast@/mcollective':
+  ensure      => present,
+  user        => 'admin',
+  password    => 'yunjikeji',
+  type        => 'topic',
+}
+
+
+rabbitmq_exchange { 'mdirected@/mcollective':
+  ensure      => present,
+  user        => 'admin',
+  password    => 'yunjikeji',
+  type        => 'direct',
+}
+
+
+rabbitmq_plugin {'rabbitmq_stomp':
+  ensure => present,
+}
+

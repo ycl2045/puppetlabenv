@@ -1,0 +1,3 @@
+mcollective::plugin { 'mcollective_shell':
+  source => 'puppet:///modules/mcollective/plugins/mcollective-shell-agent/lib/mcollective',
+}

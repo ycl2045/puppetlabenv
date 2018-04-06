@@ -1,0 +1,4 @@
+class { 'puppetdb' :
+     listen_address => '0.0.0.0',
+     manage_firewall => false }
+class { 'puppetdb::master::config' : }

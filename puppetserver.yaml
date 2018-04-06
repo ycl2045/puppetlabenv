@@ -1,0 +1,2 @@
+#class {'puppetserver::repository': yum_deps_baseurl => 'http://yum.puppetlabs.com/puppet5-nightly/el/7/SRPMS'} ->
+class { 'puppetserver': }
